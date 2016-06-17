@@ -1,0 +1,348 @@
+/*color theme hex codes
+
+based on snow barn pic
+    #721C1F  dark red
+    #8B120E lighter red
+    
+    #50A2DB blue
+    #53C0F2 light blue
+    #A6DCF5 snow blue 	rgb(166, 220, 245)
+    
+Response colors greys:
+    #474747 dark grey
+    #616161 light grey
+    
+Added Font Families:
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Amatic SC', cursive;
+    
+icon stuff:
+
+ <i class="fa fa-ICONNAME" aria-hidden="true"></i>
+
+*/
+
+/*General styling*/
+body, ul, li, h1, h2, h3, header, footer{
+    margin: 0px;
+    padding: 0px;
+    /*standard font*/
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: #8B120E;
+}
+
+a:visited{
+    color: #721C1F;
+}
+
+.button {
+    /*size*/
+    height: 50px;
+    width: 100px;
+    /*position*/
+    display: block;
+    margin: 0px auto;
+    /*looks*/
+    border: 3px solid #721C1F;
+    border-radius: 10px;
+    background-color: #000;
+    color: #8B120E;
+}
+
+.button a {
+    /*button text positioning*/
+    display: block;
+    position: relative;
+    transform: translate( -50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: auto;
+}
+
+.section-title {
+    position: relative;
+    width: 200px;
+    transform: translate( -50%, 0%);
+    left: 50%;
+}
+
+header {
+    margin: 0px;
+    position: relative;
+}
+/*End of General styling*/
+
+/* Banner Section*/
+#header-section-banner{
+    width: 100%;
+    height: 500px;
+    background-color: #A6DCF5;
+    background: url("../media/images/snowy-street-loneman.jpeg");
+    background-position: center center;
+    background-size: cover;
+    transition:background-image 0.5s;
+}
+
+#header-section-banner div{
+    position: relative;
+    top: 275px;
+}
+
+.section-title h1 {
+    text-align: center;
+    margin: 15px 0px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.1em;
+    color: #8B120E;
+}
+/* End Banner Section */
+
+/*Menu Bar section*/
+header{
+    width:100%;
+    height: 50px;
+    background-color: #53C0F2;
+}
+
+.logo{
+    float: left;
+    width: 128px;
+    margin: 0px 10px;
+    padding: 4px;
+ 
+}
+
+.logo a div{
+    display: inline-block;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.logo i{
+    color: green;
+}
+
+.logo sup{
+    font-size: .5em;
+}
+
+.quick-menu-container{
+    float: right;
+    height: 100%;
+}
+
+.quick-menu-container ul{
+    height: 100%;
+}
+
+.quick-menu-container a{
+    display: inline-block;
+    height: 100%;
+}
+
+.quick-menu-container li{
+    display: inline-block;
+    height: 100%;
+    border-right: 2px solid #721C1F;
+}
+
+.quick-menu-container a:last-of-type li{
+    border: none;
+}
+
+.quick-menu-container span{
+    display: block;
+    position: relative;
+    transform: translate( 0%, -50%);
+    top: 50%;
+    padding: 0px 10px;
+}
+/* End Menu Bar section*/
+
+/* Bio Section */
+#bio-section{
+    width: 100%;
+    margin: 0px;
+}
+
+#bio-section article{
+    float: left;
+    width: 50%;
+    padding: 50px 10% 0px 10%;
+    
+    height: 350px;
+    overflow: scroll;
+}
+
+#bio-section aside{
+    float: right;
+    width: 30%;
+    height: 400px;
+    /*margin-right: 10%;*/
+    background: url("../media/images/my-back.jpeg");
+    background-position: center center;
+    background-size: cover;
+    transition:background-image 0.5s;
+}
+/* End Bio Section */
+
+/* skills section */
+#skills-section{
+    margin: 50px 0px;
+    width: 100%;
+    padding: 2%;
+}
+
+#skills-section article{
+    float: left;
+    width: 44%;
+    padding: 2%;
+    margin: 0px;
+    text-align: center;
+    overflow: hide;
+}
+
+
+#skills-section h1, #skills-section h2, #skills-section h3, #skills-section p{
+    background-color: rgba(166, 220, 245, .55);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#skills-article-one{
+    background: url("../media/images/robot-gearbox.jpg");
+    background-position: center center;
+    background-size: cover;
+    transition:background-image 0.5s;
+}
+
+#skills-article-two{
+    background: url("../media/images/cnc-rose.jpg");
+    background-position: center center;
+    background-size: cover;
+    transition:background-image 0.5s;
+}
+
+#skills-article-three{
+    background: url("../media/images/null.jpg");
+    background-position: center center;
+    background-size: cover;
+    transition:background-image 0.5s;
+}
+
+#skills-article-four{
+    background: url("../media/images/null.jpg");
+    background-position: center center;
+    background-size: cover;
+    transition:background-image 0.5s;
+}
+/* End skills section */
+
+/* Contact Me Section */
+#contact{
+    width: 100%;
+    margin: 0px;
+    padding: 45px 0px;
+    display: inline-block;
+    background: url("../media/images/snowy-directionsign.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-box{
+    /*height: 600px;*/
+    width: 400px;
+    padding: 30px;
+    background-color: rgba(166, 220, 245, .6);
+    display: block;
+    margin: 0px auto;
+}
+
+#contact h1{
+    text-align: center;
+    font-family: 3em;
+    margin: 20px 0px;
+}
+
+#contact input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    opacity: 1;
+}
+
+#contact textarea{
+    display: block;
+    width: 100%;
+    height: 150px;
+    border: none;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+#contact button{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: #1FA1FF;
+    margin-bottom: 10px;
+    border: none;
+}
+/* End Contact Me Section */
+
+/* footer section*/
+footer{
+    width: 100%;
+    background-color: #53C0F2;
+    margin: 0px;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+}
+
+/* Icon section*/
+.sm-icons{
+    width: 158px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.icon i{
+    color: #333;
+    padding: 10px;
+    font-size: 2em;
+}
+/* End of Icon Section */
+/* End footer section*/
+
+
+
+
+
+
+
+
+
+
+
+

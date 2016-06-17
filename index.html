@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piepmeier</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700,700italic|Dancing+Script:400,700|Amatic+SC:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        
+        <script>
+        
+            function get_window_scroll(){
+                console.log(window.pageYOffset);
+                if(window.pageYOffset){
+                    header_cleared(window.pageYOffset);
+                }
+                else{ 
+                    header_cleared(0);
+                }
+            }
+            
+            function header_cleared(page_offeset){
+                if(page_offeset > 550){
+                    document.querySelector("header").style.position="fixed";
+                }
+                else{
+                    document.querySelector("header").style.position="relative";
+                }
+            }
+            
+            document.addEventListener("scroll", get_window_scroll);
+            
+        </script>
+    </head>
+    <body>
+        <!-- Header Section-->
+        <section id="header-section-banner" id="top">
+            <div class="section-title"><h1>Jared Piepmeier</h1></div>
+            <!--link needs to be filled out-->
+            <div class="button"><a href="" type="button">Contact Now</a></div>
+            
+            <!--<div class="button"><div><a href="">Contact Now</a></div></div>-->
+        </section>
+        <header>
+            <div class="logo">
+                    <!--link needs to be filled out-->
+                    <a href="">
+                        <div><i class="fa fa-space-shuttle" aria-hidden="true"></i></div>
+                        <div>Sup<sub>r</sub><i>Tek<sup>&copy</sup></i></div>
+                    </a>
+            </div>
+            <div class="quick-menu-container">
+                <ul>
+                    <!--link needs to be filled out-->
+                    <a href="#bio-section"><li><span>about me</span></li></a>
+                    <!--link needs to be filled out-->
+                    <a href="#contact"><li><span>contact me</span></li></a>
+                    <!--link needs to be filled out-->
+                    <a href="#skills-section"><li><span>skills</span></li></a>
+                    <a href="#top"><li><span>top</span></li></a>
+                </ul>
+            </div>
+        </header>
+        <!-- End Header Section-->
+        
+        <!--Bio Section-->
+        <section id="bio-section">
+            <article class="article-medium">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+            </article>
+            <aside></aside>
+        </section>
+        <!--End Bio Section-->
+        
+        <!-- skills section -->
+        <section id="skills-section">
+            <article class="article-large" id="skills-article-one">
+                <h3>skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+            </article>
+            <article class="article-large" id="skills-article-two">
+                <h3>skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+            </article>
+            <article class="article-large" id="skills-article-three">
+                <h3>skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+            </article>
+            <article class="article-large" id="skills-article-four">
+                <h3>skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus lectus, vel molestie nisl imperdiet vitae. Nam eget facilisis tortor. Proin nulla nibh, congue ultricies consequat at, suscipit ac.</p>
+            </article>
+        </section>
+        <!-- End skills section -->
+        
+        <!-- Contact Me Section -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div class="form-box">
+                <form>
+                    <input type="text" name="name"/>
+                    <input type="text" name="email"/>
+                    <input type="text" name="subject"/>
+                    <textarea type="text" name="message"/>
+                    Enter Message
+                    </textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        <!-- End Contact Me Section -->
+        <footer>
+            
+            <div class="logo">
+                    <!--link needs to be filled out-->
+                    <a href="">
+                        <div><i class="fa fa-space-shuttle" aria-hidden="true"></i></div>
+                        <div>Sup<sub>r</sub><i>Tek<sup>&copy</sup></i></div>
+                    </a>
+            </div>
+            
+            <div class="sm-icons">
+            <div class="icon"><a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a></div>
+            <div class="icon"><a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a></div>
+            <div class="icon"><a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a></div>
+        </div>
+        
+        </footer>
+    </body>
+</html>
