@@ -21,11 +21,13 @@
             }
             
             function header_cleared(page_offeset){
-                if(page_offeset > 550){
+                if(page_offeset > 510){
                     document.querySelector("header").style.position="fixed";
+                    document.getElementById("header-clone").style.display="block";
                 }
                 else{
                     document.querySelector("header").style.position="relative";
+                    document.getElementById("header-clone").style.display="none";
                 }
             }
             
@@ -38,11 +40,12 @@
         <section id="header-section-banner" id="top">
             <div class="section-title"><h1>Jared Piepmeier</h1></div>
             <!--link needs to be filled out-->
-            <div class="button"><a href="" type="button">Contact Now</a></div>
+            <div class="button"><a href="#contact" type="button">Contact Now</a></div>
             
             <!--<div class="button"><div><a href="">Contact Now</a></div></div>-->
         </section>
         <header>
+            
             <div class="logo">
                     <!--link needs to be filled out-->
                     <a href="">
@@ -50,6 +53,7 @@
                         <div>Sup<sub>r</sub><i>Tek<sup>&copy</sup></i></div>
                     </a>
             </div>
+            
             <div class="quick-menu-container">
                 <ul>
                     <!--link needs to be filled out-->
@@ -62,6 +66,8 @@
                 </ul>
             </div>
         </header>
+        <!-- Header clone used to maintain positioning after scrolling effect changes main header position-->
+        <header id="header-clone"></header>
         <!-- End Header Section-->
         
         <!--Bio Section-->
